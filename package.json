@@ -1,0 +1,54 @@
+{
+  "name": "oidc-op-express",
+  "version": "0.0.0",
+  "description": "Express.js router for the OpenID Connect identity provider library (oidc-rp)",
+  "main": "./src/index.js",
+  "scripts": {
+    "standard": "standard src/*",
+    "test": "npm run standard",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anvilresearch/oidc-op-express"
+  },
+  "keywords": [
+    "decentralized",
+    "express",
+    "oidc",
+    "openid",
+    "connect",
+    "authentication"
+  ],
+  "author": "Anvil Research, Inc.",
+  "contributors": [
+    {
+      "name": "Dmitri Zagidulin",
+      "url": "https://github.com/dmitrizagidulin/"
+    },
+    {
+      "name": "Christian Smith",
+      "email": "smith@anvil.io",
+      "url": "http://anvil.io"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anvilresearch/oidc-op-express/issues"
+  },
+  "homepage": "https://github.com/anvilresearch/oidc-op-express",
+  "dependencies": {
+    "express": "^4.14.0",
+    "oidc-op": "git://github.com/anvilresearch/oidc-op.git#master"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
+  "standard": {
+    "globals": []
+  }
+}
