@@ -42,8 +42,7 @@
   },
   "homepage": "https://github.com/anvilresearch/oidc-op-express",
   "dependencies": {
-    "express": "^4.14.0",
-    "oidc-op": "git://github.com/anvilresearch/oidc-op.git#master"
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "standard": "^8.6.0"
