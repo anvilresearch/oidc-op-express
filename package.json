@@ -1,6 +1,6 @@
 {
   "name": "oidc-op-express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Express.js router for the OpenID Connect identity provider library (oidc-rp)",
   "main": "./src/index.js",
   "scripts": {
