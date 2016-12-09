@@ -1,9 +1,13 @@
 'use strict'
 
 const express = require('express')
+const bodyParser = require('body-parser')
 
 function api (provider) {
   const router = express.Router('/')
+
+  router.use(bodyParser.json())
+  router.use(bodyParser.urlencoded({ extended: false }))
 
   let {discover, jwks, register, authorize, token, userinfo} = provider
 
