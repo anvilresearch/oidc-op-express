@@ -9,7 +9,7 @@ function api (provider) {
   router.use(bodyParser.json())
   router.use(bodyParser.urlencoded({ extended: false }))
 
-  let {discover, jwks, register, authorize, token, userinfo, logout } = provider
+  let {discover, jwks, register, authorize, token, userinfo, logout} = provider
 
   router.get('/.well-known/openid-configuration', discover.bind(provider))
   router.get('/jwks', jwks.bind(provider))
